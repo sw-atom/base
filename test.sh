@@ -1,3 +1,1 @@
-echo "Example Program"
-echo "Simple Test"
-echo "Stage by stage Testing"
+echo "Merge Pull request test"
