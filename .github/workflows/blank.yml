@@ -35,3 +35,16 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
         shell: bash
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Production
+        run: |
+          echo "Deploying application..."
+          # your real deployment commands go here
